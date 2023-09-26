@@ -1,0 +1,43 @@
+.contato{
+    padding: 1em;
+    background-color: var(--header-bg);
+    width: 91%;
+}
+
+.contato>h2, .contato>p{
+    background: var(--menu-lista);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contato>h2{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato>p{
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+#contato{
+    background: var(--menu-lista);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border: 1px solid var(--text-blue);
+    border-radius: 24px;
+    padding: 1em;
+    width: 90%;
+}
+
+#contato::placeholder{
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--header-bg);
+    background: url("../assets/Email.svg") no-repeat;
+    background-position: 1em;
+}
