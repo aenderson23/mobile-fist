@@ -33,3 +33,15 @@
     background: url("../assets/Pesquisa.svg") no-repeat;
     background-position: 1em;
 }
+
+@media screen and (min-width: 1024px) {
+    .banner>h2{
+        font-size: 36px;
+    }
+    #pesquisa-livro{
+        width: 50%
+    }
+    #pesquisa-livro::placeholder{
+        background-position: 6em;
+    }
+}

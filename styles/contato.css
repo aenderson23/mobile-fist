@@ -1,22 +1,21 @@
 .contato{
     padding: 1em;
     background-color: var(--header-bg);
-    width: 91%;
 }
 
-.contato>h2, .contato>p{
+.contato>div>h2, .contato>div>p{
     background: var(--menu-lista);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.contato>h2{
+.contato>div>h2{
     font-size: 18px;
     font-weight: 500;
 }
 
-.contato>p{
+.contato>div>p{
     font-weight: 300;
     margin: 1em 0;
 }
@@ -40,4 +39,25 @@
     color: var(--header-bg);
     background: url("../assets/Email.svg") no-repeat;
     background-position: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+    .contato{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2.5em;
+    }
+
+    .contato>div>h2{
+        font-size: 24px;
+    }
+
+    .contato>div{
+        width: 30%;
+    }
+
+    #contato{
+        width: 30%;
+    }
 }

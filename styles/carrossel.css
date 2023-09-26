@@ -17,6 +17,11 @@
     margin: .5em 0;
 }
 
+.swiper-button-prev,
+.swiper-button-next{
+    display: none;
+}
+
 .card-description,
 .card-buttons{
     display: flex;
@@ -62,4 +67,29 @@
     padding: 1em 2.2em;
     font-weight: 700;
     text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel>h2{
+        font-size: 26px;
+    }
+
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next{
+        display: block;
+        top: 60%;
+    }
+
+    .swiper{
+        width: 50%;
+    }
+
+    .card{
+        width: 40%;
+        margin: 2em auto;
+    }
 }
