@@ -16,7 +16,7 @@
     <header>
         <div class="container">
             <input type="checkbox" id="menu" class="btn-menu">
-            <label for="menu"><span class="hamburger"></span></label>
+            <label for="menu" class="btn-label"><span class="hamburger"></span></label>
             <ul class="lista-menu">
                 <li class="titulo-lista">Categorias</li>
                 <li class="lista-item"><a href="#" class="lista-link">Programação</a></li>
@@ -30,7 +30,7 @@
         </div>
         <ul class="lista-opcoes">
             <input type="checkbox" name="Categorias" id="categoria-tablet">
-            <label for="categoria-tablet">
+            <label for="categoria-tablet" class="lista-label">
                 <li class="item-opcoes">categorias</li>
             </label>
             <ul class="lista-menu">
@@ -45,8 +45,14 @@
         </ul>
         <div class="container">
             <a href="#"><img src="assets/Favoritos.svg" alt="like" class="like"></a>
-            <a href="#"><img src="assets/Compras.svg" alt="Compras" class="sacola"></a>
-            <a href="#"><img src="assets/Usuário.svg" alt="user" class="user"></a>
+            <a href="#">
+                <img src="assets/Compras.svg" alt="Compras" class="sacola">
+                <p>Minha Sacola</p>
+            </a>
+            <a href="#">
+                <img src="assets/Usuário.svg" alt="user" class="user">
+                <p>Meu Perfil</p>
+            </a>
         </div>
     </header>
     <main>
@@ -57,91 +63,88 @@
         </section>
         <section class="carrossel">
             <h2>Ultimos Lançamentos</h2>
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-                <div class="swiper-wrapper">
-                <!-- Slides -->
-                    <div class="swiper-slide"><img src="assets/books/Acessibilidade.svg" alt="Acessibilidade"></div>
-                    <div class="swiper-slide"><img src="assets/books/Angular.svg" alt="Angular"></div>
-                    <div class="swiper-slide"><img src="assets/books/ApacheKafka.svg" alt="ApacheKafka"></div>
-                    <div class="swiper-slide"><img src="assets/books/Arquitetura.svg" alt="Arquitetura"></div>
-                    <div class="swiper-slide"><img src="assets/books/Construct2.svg" alt="Construct2"></div>
-                    <div class="swiper-slide"><img src="assets/books/Gestão.svg" alt="Gestão"></div>
-                    <div class="swiper-slide"><img src="assets/books/Gestão2.svg" alt="Gestão2"></div>
-                    <div class="swiper-slide"><img src="assets/books/Guia Front-end.svg" alt="Guia Front-end"></div>
-                    <div class="swiper-slide"><img src="assets/books/Javascript.svg" alt="Javascript"></div>
-                    <div class="swiper-slide"><img src="assets/books/Liderança.svg" alt="Liderança"></div>
-                    <div class="swiper-slide"><img src="assets/books/MEAN.svg" alt="MEAN"></div>
-                    <div class="swiper-slide"><img src="assets/books/MetricasAgeis.svg" alt="MetricasAgeis"></div>
-                    <div class="swiper-slide"><img src="assets/books/Portugol.svg" alt="Portugol"></div>
-                    <div class="swiper-slide"><img src="assets/books/Tuning.svg" alt="Tuning"></div>
-                    <div class="swiper-slide"><img src="assets/books/UX.svg" alt="UX"></div>
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            <div class="card">
-                <div class="card-description">
-                    <div class="description">
-                        <h3>Talvez você também se interesse por...</h3>
-                        <h2>Angular 11 e Firebase</h2>
-                        <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+            <div class="flex">
+                <div class="swiper">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/books/Acessibilidade.svg" alt="Acessibilidade"></div>
+                        <div class="swiper-slide"><img src="assets/books/Angular.svg" alt="Angular"></div>
+                        <div class="swiper-slide"><img src="assets/books/ApacheKafka.svg" alt="ApacheKafka"></div>
+                        <div class="swiper-slide"><img src="assets/books/Arquitetura.svg" alt="Arquitetura"></div>
+                        <div class="swiper-slide"><img src="assets/books/Construct2.svg" alt="Construct2"></div>
+                        <div class="swiper-slide"><img src="assets/books/Gestão.svg" alt="Gestão"></div>
+                        <div class="swiper-slide"><img src="assets/books/Gestão2.svg" alt="Gestão2"></div>
+                        <div class="swiper-slide"><img src="assets/books/Guia Front-end.svg" alt="Guia Front-end"></div>
+                        <div class="swiper-slide"><img src="assets/books/Javascript.svg" alt="Javascript"></div>
+                        <div class="swiper-slide"><img src="assets/books/Liderança.svg" alt="Liderança"></div>
+                        <div class="swiper-slide"><img src="assets/books/MEAN.svg" alt="MEAN"></div>
+                        <div class="swiper-slide"><img src="assets/books/MetricasAgeis.svg" alt="MetricasAgeis"></div>
+                        <div class="swiper-slide"><img src="assets/books/Portugol.svg" alt="Portugol"></div>
+                        <div class="swiper-slide"><img src="assets/books/Tuning.svg" alt="Tuning"></div>
+                        <div class="swiper-slide"><img src="assets/books/UX.svg" alt="UX"></div>
                     </div>
-                    <img src="assets/Angular.png" alt="Angular">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <div class="card-buttons">
-                    <ul class="btn-list">
-                        <li><img class="btn-item" src="assets/Favoritos.svg" alt="Like"></li>
-                        <li><img class="btn-item" src="assets/Compras.svg" alt="comprar"></li>
-                    </ul>
-                    <a href="#" class="btn">Saiba mais</a>
+                <div class="card">
+                    <div class="card-description">
+                        <div class="description">
+                            <h3>Talvez você também se interesse por...</h3>
+                            <h2>Angular 11 e Firebase</h2>
+                            <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+                        </div>
+                        <img src="assets/Angular.png" alt="Angular">
+                    </div>
+                    <div class="card-buttons">
+                        <ul class="btn-list">
+                            <li><img class="btn-item" src="assets/Favoritos.svg" alt="Like"></li>
+                            <li><img class="btn-item" src="assets/Compras.svg" alt="comprar"></li>
+                        </ul>
+                        <a href="#" class="btn">Saiba mais</a>
+                    </div>
                 </div>
             </div>
             <h2>mais vendidos</h2>
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-                <div class="swiper-wrapper">
-                <!-- Slides -->
-                    <div class="swiper-slide"><img src="assets/books/Acessibilidade.svg" alt="Acessibilidade"></div>
-                    <div class="swiper-slide"><img src="assets/books/Angular.svg" alt="Angular"></div>
-                    <div class="swiper-slide"><img src="assets/books/ApacheKafka.svg" alt="ApacheKafka"></div>
-                    <div class="swiper-slide"><img src="assets/books/Arquitetura.svg" alt="Arquitetura"></div>
-                    <div class="swiper-slide"><img src="assets/books/Construct2.svg" alt="Construct2"></div>
-                    <div class="swiper-slide"><img src="assets/books/Gestão.svg" alt="Gestão"></div>
-                    <div class="swiper-slide"><img src="assets/books/Gestão2.svg" alt="Gestão2"></div>
-                    <div class="swiper-slide"><img src="assets/books/Guia Front-end.svg" alt="Guia Front-end"></div>
-                    <div class="swiper-slide"><img src="assets/books/Javascript.svg" alt="Javascript"></div>
-                    <div class="swiper-slide"><img src="assets/books/Liderança.svg" alt="Liderança"></div>
-                    <div class="swiper-slide"><img src="assets/books/MEAN.svg" alt="MEAN"></div>
-                    <div class="swiper-slide"><img src="assets/books/MetricasAgeis.svg" alt="MetricasAgeis"></div>
-                    <div class="swiper-slide"><img src="assets/books/Portugol.svg" alt="Portugol"></div>
-                    <div class="swiper-slide"><img src="assets/books/Tuning.svg" alt="Tuning"></div>
-                    <div class="swiper-slide"><img src="assets/books/UX.svg" alt="UX"></div>
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            <div class="card">
-                <div class="card-description">
-                    <div class="description">
-                        <img src="assets/Estrelinhas.svg" alt="5 star" srcset="">
-                        <h3>Autora do mes</h3>
-                        <h2>Juliana Agarikov</h2>
-                        <p>Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+            <div class="flex">
+                <div class="swiper">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/books/Acessibilidade.svg" alt="Acessibilidade"></div>
+                        <div class="swiper-slide"><img src="assets/books/Angular.svg" alt="Angular"></div>
+                        <div class="swiper-slide"><img src="assets/books/ApacheKafka.svg" alt="ApacheKafka"></div>
+                        <div class="swiper-slide"><img src="assets/books/Arquitetura.svg" alt="Arquitetura"></div>
+                        <div class="swiper-slide"><img src="assets/books/Construct2.svg" alt="Construct2"></div>
+                        <div class="swiper-slide"><img src="assets/books/Gestão.svg" alt="Gestão"></div>
+                        <div class="swiper-slide"><img src="assets/books/Gestão2.svg" alt="Gestão2"></div>
+                        <div class="swiper-slide"><img src="assets/books/Guia Front-end.svg" alt="Guia Front-end"></div>
+                        <div class="swiper-slide"><img src="assets/books/Javascript.svg" alt="Javascript"></div>
+                        <div class="swiper-slide"><img src="assets/books/Liderança.svg" alt="Liderança"></div>
+                        <div class="swiper-slide"><img src="assets/books/MEAN.svg" alt="MEAN"></div>
+                        <div class="swiper-slide"><img src="assets/books/MetricasAgeis.svg" alt="MetricasAgeis"></div>
+                        <div class="swiper-slide"><img src="assets/books/Portugol.svg" alt="Portugol"></div>
+                        <div class="swiper-slide"><img src="assets/books/Tuning.svg" alt="Tuning"></div>
+                        <div class="swiper-slide"><img src="assets/books/UX.svg" alt="UX"></div>
                     </div>
-                    <img src="assets/Perfil-escritora 1.png" alt="Juliana Agarikov">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <div class="card-buttons">
-                    <ul class="btn-list">
-                        <li><img class="btn-item" src="assets/Favoritos.svg" alt="Like"></li>
-                        <li><img class="btn-item" src="assets/Compras.svg" alt="comprar"></li>
-                    </ul>
-                    <a href="#" class="btn">Saiba mais</a>
+                <div class="card">
+                    <div class="card-description">
+                        <div class="description">
+                            <img src="assets/Estrelinhas.svg" alt="5 star" srcset="">
+                            <h3>Autora do mes</h3>
+                            <h2>Juliana Agarikov</h2>
+                            <p>Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                        </div>
+                        <img src="assets/Perfil-escritora 1.png" alt="Juliana Agarikov">
+                    </div>
+                    <div class="card-buttons">
+                        <ul class="btn-list">
+                            <li><img class="btn-item" src="assets/Favoritos.svg" alt="Like"></li>
+                            <li><img class="btn-item" src="assets/Compras.svg" alt="comprar"></li>
+                        </ul>
+                        <a href="#" class="btn">Saiba mais</a>
+                    </div>
                 </div>
             </div>
         </section>

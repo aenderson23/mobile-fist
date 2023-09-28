@@ -43,3 +43,14 @@ footer>h2{
         font-size: 24px;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .lista-footer{
+        padding: 1em;
+        border-left: 1px solid var(--cor-footer);
+    }
+
+    footer{
+        padding: 3em 0;
+    }
+}
